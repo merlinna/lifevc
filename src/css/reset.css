@@ -1,0 +1,62 @@
+@charset "utf-8";
+/* reset */
+*{
+	margin:0;
+	padding:0
+}
+a{
+	text-decoration:none
+	}
+li{
+	list-style:none
+}
+body{
+	font:12px/1.5 宋体,tahoma,arial;
+	}
+em,i,b,strong{
+	font-weight:normal;
+	font-style:normal;
+	}	
+img{
+		border:0;
+		/* display:block; */
+		/* vertical-align: middle */
+		vertical-align: top;
+	}
+form, input {
+		border: none 0;
+		vertical-align: top;
+	}
+.clearfix::after{
+	content: "";
+	display: block;
+	clear: both;
+	height: 0;
+	overflow: hidden;
+	visibility: hidden;
+}
+.i-global, .indexBanner .focusImg .BtnNumList a, .indexBanner .focusImg .BtnNumList a.cur, .gsExhibit .focusImg .BtnNumList a, .gsExhibit .focusImg .BtnNumList a.cur, .gsExhibit .pagingArrowWrap .arrow, .gsExhibit .pagingArrowWrap.prev .arrow, .gsExhibit .pagingArrowWrap.next .arrow, .full-focus .focusImg .BtnNumList a, .full-focus .focusImg .BtnNumList a.cur, .full-focus .pagingArrowWrap .arrow {
+    background-image: url(http://i1.lifevccdn.com/images/i_global2_v13.png);
+	background-repeat: no-repeat;
+}
+.fontstyle-yahei {
+    font-family: "微软雅黑","Microsoft YaHei","SimHei";
+}
+/* iconfont */
+/* @font-face {
+    font-family: 'iconfont';
+    src: url('../font/iconfont.eot');
+    src: url('../font/iconfont.eot?#iefix') format('embedded-opentype'),
+         url('../font/iconfont.woff2') format('woff2'),
+         url('../font/iconfont.woff') format('woff'),
+         url('../font/iconfont.ttf') format('truetype'),
+         url('../font/iconfont.svg#iconfont') format('svg');
+}
+.iconfont {
+font-family: "iconfont" !important;
+font-size: 12px;
+font-style: normal;
+color: #b0b0b0;
+-webkit-font-smoothing: antialiased;
+-moz-osx-font-smoothing: grayscale;
+} */

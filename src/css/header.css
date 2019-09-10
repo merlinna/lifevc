@@ -1,0 +1,352 @@
+@charset "utf-8";
+/* 蒙版 */
+
+.regbg{
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 50002;
+    overflow: hidden;
+    position: fixed;
+    background: #000;
+    opacity: .75;
+    display: none
+}
+.reg .load{
+    width: 612px;
+    height: 510px;
+    background-color: #fff;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    display: none;
+    z-index: 50008;    
+}
+/* header */
+#top-bar {
+    width: 100%;
+    height: 34px;
+    background: #2b2b2b;
+    font-size: 12px;
+    color: #ccc;
+    line-height: 34px;
+}
+
+#top-bar .wrap {
+    width: 1000px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 900;
+}
+#top-bar .tel {
+    font-family: Arial,Helvetica,sans-serif;
+}
+#top-bar .quick-menu {
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 99;
+}
+/* 右侧导航所有的li */
+#top-bar .quick-menu li {
+    float: left;
+    padding-left: 14px;
+    position: relative;
+}
+#top-bar .quick-menu a {
+    color: #ccc;
+}
+/* 我的账户 */
+#top-bar .quick-menu .mn {
+    padding-left: 18px;
+}
+#top-bar .arrow {
+    display: inline-block;
+    color: #aaa;
+    line-height: 0;
+    position: relative;
+    left: 3px;
+    top: -8px;
+}
+/* 箭头 */
+#top-bar .arrow i,#top-bar .arrow b{
+    display: inline-block;
+    border-style: solid;
+    border-color: #aaa transparent;
+    border-width: 5px 5px 0 5px;
+    line-height: 0;
+    position: absolute;
+    left: 0;
+    top: 2px;
+    z-index: 1;
+}
+#top-bar .arrow i{
+    border-color: #2b2b2b transparent;
+    top: 1px;
+    z-index: 3;
+}
+/* 账户二级导航 */
+#top-bar .quick-menu ul {
+    width: 70px;
+    overflow: hidden;
+    background-color: #fff;
+    border: 1px solid #dedede;
+    box-shadow: 0 0 6px rgba(0,0,0,.12);
+    /* padding-top: 23px; */
+    position: absolute;
+    left: 13px;
+    top: 3px;
+    z-index: 998;
+    display: none;
+}
+#top-bar .quick-menu li li {
+    width: 100%;
+    float: none;
+    line-height: 22px;
+    padding: 0;
+}
+#top-bar .quick-menu li li a{
+    width: 100%;
+    height: 22px;
+    display: block;
+    text-align: left;
+    font-size: 12px;
+    color: #666;
+    line-height: 22px;
+    text-decoration: none;
+    padding-left: 5px;
+}
+
+/* #top-bar .quick-menu li a:hover{
+    color: #83b842;
+    text-decoration: underline;
+} */
+
+/* 手机app */
+#top-bar .quick-menu .mn.mobile {
+    padding-left: 25px;
+    padding-right: 15px;
+    visibility: visible;
+    overflow: visible;
+}
+#top-bar .quick-menu .mobile .i-m {
+    width: 0;
+    height: 0;
+    display: inline-block;
+    border-style: solid;
+    border-color: #fff;
+    border-width: 2px 1px 3px;
+    line-height: 0;
+    padding: 7px 6px 0 0;
+    position: relative;
+    right: 3px;
+    top: 2px;
+}
+#top-bar .quick-menu .mobile .i-m i {
+    width: 2px;
+    height: 1px;
+    display: block;
+    background-color: #2b2b2b;
+    position: absolute;
+    left: 2px;
+    bottom: -2px;
+}
+#top-bar .quick-menu .onlineService {
+    background-position: -160px -1217px;
+    padding-left: 27px;
+    cursor: pointer;
+}
+#top-bar .quick-menu .mobile .dCode {
+    width: 68px;
+    /* background-color: #fff; */
+    padding-top: 31px;
+    position: absolute;
+    left: 17px;
+    top: 3px;
+    z-index: 998;
+    display: none;
+}
+#top-bar .quick-menu .mobile .dCode-cont {
+    width: 134px;
+    height: 169px;
+    background-color: #fff;
+    border-style: solid;
+    border-color: #dedede;
+    border-width: 0 1px 1px;
+    padding: 15px 0 10px;
+    position: absolute;
+    right: -1px;
+    top: 31px;
+}
+#top-bar .quick-menu .mobile .dCode-cont img {
+    display: block;
+    margin: 0 auto;
+}
+/* header */
+#header {
+    width: 1000px;
+    height: 68px;
+    margin: 0 auto;
+    padding-top: 39px;
+    position: relative;
+}
+#header #logo, #header #logo a {
+    width: 318px;
+    height: 39px;
+    overflow: hidden;
+    display: block;
+    margin: 0 auto;
+    padding: 0;
+    position: relative;
+    z-index: 9;
+}
+#header #logo .logo {
+    background-position: 0 0;
+    text-indent: -3000px;
+}
+/* tool */
+#header .tool {
+    position: absolute;
+    right: 0;
+    top: 44px;
+    z-index: 899;
+}
+/* 购物车 */
+#header #cartGrid_top {
+    width: 98px;
+    height: 29px;
+    display: block;
+    float: right;
+    background-position: -172px -50px;
+    cursor: pointer;
+    text-align: center;
+    font-size: 14px;
+    color: #fff;
+    line-height: 29px;
+    text-decoration: none;
+}
+.hide {
+    display: none;
+}
+/* 搜索框 */
+#header .search {
+    width: 154px;
+    height: 30px;
+    float: right;
+    background-position: 0 -50px;
+    margin-right: 8px;
+    padding: 0 0 0 10px;
+}
+#header .search .schInput {
+    width: 127px;
+    height: 29px;
+    overflow: hidden;
+    float: left;
+    text-align: left;
+}
+#header .search .txt {
+    width: 175px;
+    height: 29px;
+    font-size: 12px;
+    line-height: 29px;
+    outline: none;
+    background: none;
+    border: 0;
+}
+#header .search .schBtn {
+    width: 26px;
+    height: 29px;
+    overflow: hidden;
+    text-align: left;
+}
+#header .search .btnSearch {
+    width: 26px;
+    height: 29px;
+    outline: none;
+    background: none;
+    border: 0;
+    cursor: pointer;
+}
+/* 头部导航 */
+#navWrap {
+    width: 100%;
+    height: 30px;
+    border-bottom: 1px solid #ccc;
+}
+#nav {
+    width: 1000px;
+    margin: 0 auto;
+}
+#nav .nav-list {
+    text-align: center;
+}
+#nav .nav-list li {
+    height: 30px;
+    display: inline-block;
+    font-size: 14px;
+    color: #333;
+    line-height: 18px;
+    font-family: "微软雅黑","Microsoft YaHei","SimHei";
+    letter-spacing: normal;
+    word-spacing: normal;
+    vertical-align: top;
+    padding: 0 18px;
+    position: relative;
+}
+#nav .nav-list li a {
+    width: 57px;
+    height: 24px;
+    display: block;
+    text-align: center;
+    font-size: 14px;
+    color: #333;
+    line-height: 18px;
+    position: relative;
+    top: 3px;
+    text-indent: -3000px; 
+}
+#nav .nav-list .nav-1{
+    width: 58px;
+    background-position: 0 -935px;
+}
+#nav .nav-list .nav-2{
+    width: 28px;
+    background-position: 0 -727px;
+}
+
+#nav .nav-list .nav-3{
+    width: 42px;
+background-position: 0 -787px;
+}
+#nav .nav-list .nav-4{
+    width: 28px;
+background-position: 0 -848px;
+}
+#nav .nav-list .nav-5{
+    width: 28px;
+background-position: 0 -668px;
+}
+#nav .nav-list .nav-6{
+    width: 58px;
+background-position: 0 -697px;
+}
+#nav .nav-list .nav-7{
+    width: 29px;
+background-position: 0 -908px;
+}
+
+#nav .nav-list .nav-all{
+    width: 56px;
+background-position: 0 -448px;
+}
+/*头部导航悬停时效果  */
+#nav .nav-list li a:hover{
+    border-bottom: 3px solid #3b9f39;
+    color: #3faa3d;
+    background-position-x: -145px;
+}
+
+
+
+
